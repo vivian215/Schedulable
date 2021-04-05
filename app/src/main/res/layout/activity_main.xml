@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcomemsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
+        android:text="Welcome to your
+        schedulable!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:layout_marginTop="125dp"
+        android:layout_marginHorizontal="70dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7e56af"
+        android:paddingHorizontal="90dp"
+        android:paddingVertical="20dp"
+        android:text="View"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginTop="350dp"
+        android:layout_marginHorizontal="60dp"
+        />
+     <TextView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7e56af"
+        android:paddingHorizontal="100dp"
+        android:paddingVertical="20dp"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginTop="475dp"
+        android:layout_marginHorizontal="60dp"
+     />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="60dp"
+        android:padding="@dimen/appbar_padding"
+        android:text="Schedulable"
+        android:background="#7e56af"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:textSize="45dp"
+    />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
